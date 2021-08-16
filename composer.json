@@ -1,0 +1,20 @@
+{
+  "name": "dissonance/ui_backend",
+  "description": "Шаблоны для админки(будущая тема)",
+  "authors": [
+    {
+      "name": "Surkov Sergey",
+      "role": "creator"
+    }
+  ],
+  "require": {
+    "dissonance/ui_minicss": "^1.*"
+  },
+  "extra": {
+    "dissonance": {
+      "id": "ui_backend",
+      "public_path": "assets",
+      "resources_path": "resources"
+    }
+  }
+}

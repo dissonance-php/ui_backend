@@ -1,0 +1,17 @@
+
+.sidebar {
+    border-right: 1px solid #dedede;
+    height: 100%;
+    max-width: 250px;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    list-style-type: none;
+    border-bottom: 1px solid #dedede;
+    padding: 7px 7px 7px 35px;
+}
