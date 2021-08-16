@@ -8,7 +8,7 @@
     }
   ],
   "require": {
-    "dissonance/ui_minicss": "^1.*"
+    "dissonance/ui_minicss": "1.*"
   },
   "extra": {
     "dissonance": {
