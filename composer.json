@@ -1,5 +1,5 @@
 {
-  "name": "dissonance/ui_backend",
+  "name": "symbiotic/ui_backend",
   "description": "Шаблоны для админки(будущая тема)",
   "authors": [
     {
@@ -10,10 +10,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "require": {
-    "dissonance/ui_minicss": "1.*"
+    "symbiotic/ui_minicss": "1.*"
   },
   "extra": {
-    "dissonance": {
+    "symbiotic": {
       "id": "ui_backend",
       "public_path": "assets",
       "resources_path": "resources"
