@@ -1,17 +1,159 @@
+html, * {
+    font-family: Roboto, -apple-system, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
 
-.sidebar {
-    border-right: 1px solid #dedede;
-    height: 100%;
-    max-width: 250px;
+body {
+    background: #fff;
+}
+
+.page-container {
+    padding-left: 0;
+}
+
+.header-container {
+    height: 60px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.sidebar, .sidebar-container {
+    border-right: 1px solid #dfdfdf;
+    height: 100vh;
     padding: 0;
     margin: 0;
 }
-.menu {
+
+.sidebar-container {
+    max-width: 260px;
+}
+
+.drawer-toggle.persistent {
+    margin: 3px;
+    background-color: #f3f3f3;
+}
+
+.sidebar-check + .sidebar {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: calc(0rem - 320px - 0.5rem);
+
+    text-align: left;
+}
+
+[type="checkbox"].sidebar-check {
+    display: none;
+}
+
+[type="checkbox"]:checked.sidebar-check + .sidebar {
+    z-index: 1001;
+    margin-left: 0.5rem;
+    position: inherit;
+    left: 0;
+}
+
+[type="checkbox"].sidebar-check + * {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 320px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 0;
+    z-index: 1110;
+    left: -320px;
+
+}
+
+.left-menu {
     padding: 0;
     margin: 0;
 }
-.menu li {
+
+.left-menu [class^="ti-"] {
+    vertical-align: baseline;
+    margin: 0 8px 0 -27px;
+    font-size: 16px;
+}
+
+.left-menu li {
     list-style-type: none;
-    border-bottom: 1px solid #dedede;
-    padding: 7px 7px 7px 35px;
+    padding: 10px 10px 5px 45px;
+}
+
+.left-menu li a, .left-menu li a:visited {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav li {
+    list-style-type: none;
+    padding: 8px 5px 8px 35px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.sidebar-nav li:hover {
+    background-color: #fcfcfc;
+
+}
+
+.sidebar-nav li a, .sidebar-nav li a:visited {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+}
+
+.sidebar-nav li a:hover {
+
+    color: #111;
+}
+
+
+.sidebar-nav [class^="ti-"] {
+    vertical-align: text-bottom;
+    margin: 0 8px 0 -27px;
+}
+
+:root {
+    --form-back-color: #fdfdfd;
+    --input-back-color: #ffffff;
+    --fore-color: #333;
+}
+
+div.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row.responsive-label {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+input:not([type]),
+[type="text"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="password"],
+[type="url"],
+[type="tel"],
+textarea,
+select {
+    width: 70%;
+    padding: calc(var(--universal-padding) / 2) calc(1.5 * var(--universal-padding));
 }

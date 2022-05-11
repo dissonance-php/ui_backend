@@ -7,10 +7,16 @@
       "role": "creator"
     }
   ],
-  "version": "1.0.1",
+
+  "version": "1.0.3",
   "license": "MIT",
   "require": {
     "symbiotic/ui_minicss": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "\\Symbiotic\\UIBackend\\": "src/Backend/"
+    }
   },
   "extra": {
     "symbiotic": {
