@@ -3,14 +3,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>@yield('title')</title>
     @section('header_scripts')
-        {!!css('ui_minicss::mini.css')!!}
-        {!!css('css/backend-1.0.css')!!}
-        {!!css('css/themify-icons.css')!!}
-        {!!js('js/backend-1.0.js')!!}
+        {!!$this->css('ui_minicss::mini.css')!!}
+        {!!$this->css('css/backend-1.0.css')!!}
+        {!!$this->css('css/themify-icons.css')!!}
+        {!!$this->js('js/backend-1.0.js')!!}
     @show
 </head>
 <body>
-{{{$apps = \_S\core(\Symbiotic\Apps\AppsRepositoryInterface::class)}}}
+{{{$apps = $this->core(\Symbiotic\Apps\AppsRepositoryInterface::class)}}}
 <div class="row" style="height: 100%">
     <input type="checkbox" id="sidebar-toggle" class="sidebar-check">
     <div class="sidebar">
@@ -20,22 +20,22 @@
             @if($apps->has('settings'))
                 <li>
                     <i class="ti-settings"></i>
-                    <a href="{{route('backend:settings::index')}}">Настройки</a>
+                    <a href="{{$this->route('backend:settings::index')}}">Настройки</a>
                 </li>
             @endif
             @if($apps->has('develop'))
                 <li>
                     <i class="ti-panel"></i>
-                    <a href="{{route('backend:develop::index')}}">Develop</a>
+                    <a href="{{$this->route('backend:develop::index')}}">Develop</a>
                 </li>
             @endif
             @if($apps->has('develop'))
                 <li>
                     <i class="ti-trash"></i>
-                    <a href="{{route('backend:develop::cache.clean')}}">Очистка кеша</a>
+                    <a href="{{$this->route('backend:develop::cache.clean')}}">Очистка кеша</a>
                 </li>
             @endif
-            {{{$links = \_S\event(\_S\core(\Symbiotic\UIBackend\Events\MainSidebar::class))}}}
+            {{{$links = $this->event($this->core(\Symbiotic\UIBackend\Events\MainSidebar::class))}}}
             @foreach($links->getItems() as $html)
               <li>{!! $html !!}</li>
             @endforeach

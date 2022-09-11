@@ -1,21 +1,21 @@
 {
   "name": "symbiotic/ui_backend",
-  "description": "Шаблоны для админки(будущая тема)",
+  "description": "Base templates for Admin panel",
   "authors": [
     {
       "name": "Surkov Sergey",
-      "role": "creator"
+      "role": "Developer"
     }
   ],
 
-  "version": "1.0.3",
+  "version": "1.4.0",
   "license": "MIT",
   "require": {
-    "symbiotic/ui_minicss": "1.*"
+    "symbiotic/ui_minicss": "^1.0"
   },
   "autoload": {
     "psr-4": {
-      "\\Symbiotic\\UIBackend\\": "src/Backend/"
+      "Symbiotic\\UIBackend\\": "src/Backend/"
     }
   },
   "extra": {
