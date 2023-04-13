@@ -1,0 +1,134 @@
+
+body.dark {
+    background-color: #171717;
+    color: #99857a;
+}
+
+
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+    color: #60c187;
+}
+
+body.dark .left-menu li:hover {
+    background-color: #222;
+}
+
+body.dark .left-menu li a, body.dark .left-menu li a:visited {
+    color: #777;
+}
+
+body.dark .left-menu [class^="ti-"] {
+    color: #60c187;
+}
+
+body.dark [type="checkbox"].sidebar-check + * {
+    background: #171717;
+}
+
+body.dark .header-container {
+    background-color: #222;
+    border-bottom: 1px solid #444;
+}
+
+body.dark .sidebar, body.dark .sidebar-container {
+    border-right: 1px solid #444;
+}
+
+
+body.dark .drawer-toggle.persistent {
+    margin: 6px;
+    background-color: #171717;
+
+}
+
+body.dark .sidebar-nav li {
+    border-bottom: 1px solid #464646;
+}
+
+body.dark .sidebar-nav li:hover {
+    background-color: #382a24;
+}
+
+body.dark .sidebar-nav li a, body.dark .sidebar-nav li a:visited {
+    color: #b4c1b3;
+}
+
+body.dark .sidebar-nav li:hover a {
+    color: #ccc;
+}
+
+body.dark .sidebar-nav [class^="ti-"] {
+    color: #fa7901;
+}
+
+body.dark form {
+    background: #222;
+    color: #fa7901;
+    border-color: #444;
+}
+
+body.dark label {
+    color: #888;
+}
+
+body.dark input:not([type]),
+body.dark [type="text"],
+body.dark [type="email"],
+body.dark [type="number"],
+body.dark [type="search"],
+body.dark [type="password"],
+body.dark [type="url"],
+body.dark [type="tel"],
+body.dark [type="checkbox"],
+body.dark [type="radio"],
+body.dark textarea, body.dark select {
+    background: #181716;
+    color: #857764;
+    border-color: #666;
+}
+
+body.dark input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover,
+body.dark input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus,
+body.dark textarea:hover,
+body.dark textarea:focus,
+body.dark select:hover,
+body.dark select:focus {
+    border-color: #b56a35;
+}
+
+body.dark button, body.dark [type="button"], body.dark [type="submit"], body.dark [type="reset"], body.dark a.button, body.dark label.button, body.dark .button,
+body.dark a[role="button"], body.dark label[role="button"], body.dark [role="button"] {
+    background: #fa7901;
+    color: #ffffff !important;
+    border-color: #333;
+}
+
+button.primary:hover, button.primary:focus, [type="button"].primary:hover, [type="button"].primary:focus, [type="submit"].primary:hover, [type="submit"].primary:focus, [type="reset"].primary:hover, [type="reset"].primary:focus, .button.primary:hover, .button.primary:focus, [role="button"].primary:hover, [role="button"].primary:focus {
+    --button-hover-back-color: #444;
+}
+
+:root body.dark {
+    --table-border-color: #444;
+    --table-border-separator-color: #666;
+    --table-head-back-color: #1d1d1d;
+    --table-head-fore-color: #60c187;
+    --table-body-back-color: #222222;
+    --table-body-fore-color: #a5a19a;
+    --table-body-alt-back-color: #eee;
+    --a-link-color: #fa7901;
+    --a-visited-color: #fa7901;
+    --form-border-color: #444;
+
+}
+
+body.dark a:link, body.dark .user-theme a, body.dark .user-menu {
+    color: #fa7901;
+}
+body.dark .user-menu li {
+    border: 1px solid #444;
+    background-color: #1d1d1d;
+}
+body.dark small {
+    color:#555;
+}
+

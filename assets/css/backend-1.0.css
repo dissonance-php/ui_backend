@@ -79,7 +79,7 @@ body {
 
 .left-menu li {
     list-style-type: none;
-    padding: 10px 10px 5px 45px;
+    padding: 7px 7px 7px 45px;
 }
 
 .left-menu li a, .left-menu li a:visited {
@@ -114,7 +114,6 @@ body {
 }
 
 .sidebar-nav li a:hover {
-
     color: #111;
 }
 
@@ -125,9 +124,13 @@ body {
 }
 
 :root {
-    --form-back-color: #fdfdfd;
+    --form-back-color: #ffffff;
     --input-back-color: #ffffff;
     --fore-color: #333;
+    --universal-border-radius: 5px;
+    --table-body-back-color: #ffffff;
+    --table-border-color: #e6e6e6;
+    --input-fore-color: #666;
 }
 
 div.center {
@@ -156,4 +159,44 @@ textarea,
 select {
     width: 70%;
     padding: calc(var(--universal-padding) / 2) calc(1.5 * var(--universal-padding));
+}
+
+small {
+    color: #ababab;
+}
+
+table:not(.horizontal) {
+    overflow: inherit;
+    max-height: inherit;
+}
+
+table th, table td {
+    padding: var(--universal-padding);
+}
+
+.user-theme, .user-menu {
+    position: relative;
+    padding: 20px;
+    font-size: 20px;
+    color: #333;
+}
+.user-theme a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-menu ul {
+    display: none;
+    position: absolute;
+    left: -40px;
+}
+.user-menu li {
+    list-style-type: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #fff;
+}
+.user-menu:hover ul {
+    display: block;
 }
