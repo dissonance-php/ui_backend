@@ -25,7 +25,7 @@ class MainSidebar implements StoppableEventInterface
         protected AppsRepositoryInterface $appsRepository
     ) {
 
-        $this->cache_key = 'symbiotic_'.\md5(__CLASS__);
+        $this->cache_key = 'symbiotic_'.\md5(''.\ftok(__FILE__));
         if ($this->cache->has($this->cache_key)) {
             $items = $this->cache->get($this->cache_key);
             if (is_array($items)) {
